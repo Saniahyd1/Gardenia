@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardenia Service Apartment</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Gardenia Service Apartment</h1>
+        <p>Guest house @ Gachibowli, Hyderabad</p>
+        
+        <div class="banner-text">
+        <h2>Book a Room Now</h2>  
+        </div>
+    </div>        
+            <div class="SideNav">
+                <nav>
+                    <ul>
+                        <li><a href="#feature">HOME</a></li>
+                        <li><a href="#Booking">BOOK NOW</a></li>
+                        <li><a href="#Images">IMAGES</a></li>
+                        <li><a href="#CONTACT">CONTACT US</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="menu-btn">
+                <img src="images.png" class="menu">
+            </div>
+
+    <!-- features -->
+    <section id="feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>WHY CHOOSE US</h1>
+        </div>
+    
+        <div class="feature-box">
+        <div class="image-item">
+            <img src="images46.jpg" class="image">
+          
+        </div>
+        <div class="features">
+            <p> * Experienced Staff</p>
+            <p> * Free Wi-Fi</p>
+            <p> * Air Conditioning</p>
+            <p> * Safety and Hygiene</p>
+            <p> * Elevator/Lift</p>
+            <p> * Parking Facility</p>
+            <p> * Peaceful and quiet environment</p>
+            <p> * Seating Area</p>
+            <p> * Luggage Storage</p>
+            <p> * Proximity to Care Hospital and MNCs</p>
+        </div>
+        </div>
+   </section>
+    <section id="Booking">
+        <div class="booking">
+        <h1>ROOM BOOKING</h1>
+    <form action="booking_process.php" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="checkin">Check-in Date:</label>
+        <input type="date" id="checkin" name="checkin" required><br><br>
+
+        <label for="checkout">Check-out Date:</label>
+        <input type="date" id="checkout" name="checkout" required><br><br>
+
+        <label for="roomtype">Room Type:</label>
+        <select id="roomtype" name="roomtype">
+            <option value="standard">Standard Room</option>
+            <option value="deluxe">Deluxe Room</option>
+            <option value="suite">Suite</option>
+        </select><br><br>
+
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Submit" >
+    </form>
+</div>
+    </section>
+
+    <section id="Images">
+        <h27>IMAGES</h27>
+        <div class="gallery">
+            <img src="image23.avif" alt="image01" class="image-gallery01">
+            <img src="image24.jpeg" alt="image02" class="image-gallery02">
+            <img src="image25.jpg" alt="image03" class="image-gallery03">
+            <img src="image26.jpg" alt="image04" class="image-gallery04">
+            <img src="image27.avif" alt="image05" class="image-gallery05">
+            <img src="image28.webp" alt="image06" class="image-gallery06">
+            <img src="image29.jpg" alt="image07" class="image-gallery07">
+            <img src="img.jpeg" alt="image08" class="image-gallery08">
+                
+        </div>
+    </section>
+    
+    <section id="CONTACT">
+        <h27>CONTACT US</h27>
+        <div class="contact">
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>ADDRESS</h1>
+                    <p><i class="fa fa-map-marker"></i>Udaya Elite 3rd Floor, Jayabheri Pine Valley,<br>
+                         Gachibowli, Hyderabad, Telangana 500032</p>
+                    <!-- Place your address content here -->
+                </div>
+                <div class="footer-right">
+                    <h1>GET IN TOUCH</h1>
+                    <p> 9985969666/9848495689,<i class="fa fa-phone"></i><br>
+                        wellness.gardenia@gmail.com <i class="fa fa-envelope"></i></p>
+        
+                    
+                </div>
+            </div>
+        </div>
+        
+            
+            
+       
+
+    </section>
+    <script>
+        var menuBtn = document.getElementById("menu-btn");
+        var sideNav = document.getElementsByClassName("SideNav")[0]; // Get the first element with class "SideNav"
+        var menuImage = document.getElementsByClassName("menu")[0]; // Get the first element with class "menu"
+    
+        sideNav.style.right = "-250px";
+    
+        menuBtn.onclick = function () {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menuImage.src = "close.png"; // Corrected typo here
+            } else {
+                sideNav.style.right = "-250px";
+                menuImage.src = "menu.png"; // Corrected typo here
+            }
+        }
+    </script>
+           
+    
+</body>
+
+</html>
+
